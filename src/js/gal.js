@@ -5,8 +5,13 @@ export default class Traveler {
     this.planet = planet;
   }
 
-
-
+  dogYears() {
+    let currentAge = 0;
+    if (this.planet === "Earth") {
+      currentAge = this.age * 1;
+    }
+    return parseFloat(currentAge.toFixed(2))
+  }
 }
 
 
