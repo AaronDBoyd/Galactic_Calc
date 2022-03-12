@@ -9,6 +9,8 @@ export default class Traveler {
     let currentAge = 0;
     if (this.planet === "Earth") {
       currentAge = this.age * 1;
+    } else if (this.planet === "Mercury") {
+      currentAge = this.age / 0.24;
     }
     return parseFloat(currentAge.toFixed(2))
   }

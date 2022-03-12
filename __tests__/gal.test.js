@@ -14,12 +14,18 @@ describe('Traveler', () => {
       const astronaut = new Traveler(34, "Earth"); 
       expect(astronaut.planet).toEqual("Earth");
       expect(astronaut.dogYears()).toEqual(34);
-    })
+    });
 
     test("should build upon the prototype method for determining a user's age based on the value 'Mercury' for the planet property", () => {
       const astronaut = new Traveler(34, "Mercury"); 
       expect(astronaut.planet).toEqual("Mercury");
       expect(astronaut.dogYears()).toEqual(141.67);
-    })
+    });
+
+    test("should build upon the prototype method for determining a user's age based on the value 'Venus' for the planet property", () => {
+      const astronaut = new Traveler(34, "Venus"); 
+      expect(astronaut.planet).toEqual("Venus");
+      expect(astronaut.dogYears()).toEqual(54.84);
+    });
   });
 });
