@@ -28,6 +28,8 @@ export default class Traveler {
     let daysNumbered = 0;
     if (this.planet === "Earth") {
       daysNumbered = expect / 1;
+    } else if (this.planet === "Mercury") {
+      daysNumbered = expect / 0.24;
     } 
     return parseFloat(daysNumbered.toFixed(2));
   }
