@@ -41,6 +41,17 @@ export default class Traveler {
     }
     return parseFloat(daysNumbered.toFixed(2));
   }
+
+  surpassed () {
+    let expect = 77.8 - this.age;
+    let extraYears = 0;
+    if (Math.sign(expect) === -1) {
+      if (this.planet === "Earth") {
+        extraYears = "You've outlived your expected life span by " + (parseFloat((expect / 1) * -1).toFixed(2)) + " years.";
+      }
+      return extraYears;
+      }
+    }
 }  
 
 
