@@ -39,5 +39,11 @@ describe('Traveler', () => {
       expect(astronaut.planet).toEqual("Jupiter");
       expect(astronaut.dogYears()).toEqual(2.87);
     });
+
+    test("should return 'So, Where ya livin?' if no value selected for planet", () => {
+      const astronaut = new Traveler(34, ""); 
+      expect(astronaut.planet).toEqual("");
+      expect(astronaut.dogYears()).toEqual("So, Where ya livin?");
+    });
   });
 });
