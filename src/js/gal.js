@@ -32,6 +32,8 @@ export default class Traveler {
       daysNumbered = expect / 0.24;
     } else if (this.planet === "Venus") {
       daysNumbered = expect / 0.62;
+    } else if (this.planet === "Mars") {
+      daysNumbered = expect / 1.88;
     }
     return parseFloat(daysNumbered.toFixed(2));
   }
