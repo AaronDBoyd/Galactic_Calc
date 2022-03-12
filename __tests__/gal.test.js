@@ -8,7 +8,7 @@ describe('Traveler', () => {
     expect(astronaut.planet).toEqual("Earth");
   });
 
-  describe('Travelr#dogYears', () => {
+  describe('Traveler#dogYears', () => {
 
     test("should create a prototype method for determining a user's age based on the value 'Earth' for the planet property", () => {
       const astronaut = new Traveler(34, "Earth"); 
@@ -46,4 +46,15 @@ describe('Traveler', () => {
       expect(astronaut.dogYears()).toEqual("So, Where ya livin?");
     });
   });
+
+  describe('Traveler#yearsLeft', () => {
+
+    test("should create a prototype method for determining a user's remaining life expectancy and the value 'Earth' for the planet property", () => {
+      const astronaut = new Traveler(34, "Earth"); 
+      expect(astronaut.planet).toEqual("Earth");
+      expect(astronaut.yearsLeft()).toEqual(43.8);
+    });
+  })
+
+
 });
