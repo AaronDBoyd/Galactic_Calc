@@ -27,5 +27,11 @@ describe('Traveler', () => {
       expect(astronaut.planet).toEqual("Venus");
       expect(astronaut.dogYears()).toEqual(54.84);
     });
+
+    test("should build upon the prototype method for determining a user's age based on the value 'Mars' for the planet property", () => {
+      const astronaut = new Traveler(34, "Mars"); 
+      expect(astronaut.planet).toEqual("Mars");
+      expect(astronaut.dogYears()).toEqual(18.09);
+    });
   });
 });
