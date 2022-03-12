@@ -1,5 +1,5 @@
 {
-  "name": "Galactic Age Calculator",
+  "name": "galactic_calc",
   "version": "1.0.0",
   "description": "This program will calculate the relative age of a user's age on planet Earth, Mercury, Venus, Mars and Jupiter.",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "keywords": [],
   "author": "Aaron Boyd",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/core": "7.6.4",
     "@babel/plugin-transform-modules-commonjs": "7.6.0",
