@@ -1,8 +1,9 @@
+import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './../css/styles.css';
-// import CLASS from './business.js';
-import $ from 'jquery';
+import Traveler from './js/gal.js';
+
 
 //UI Logic
 
