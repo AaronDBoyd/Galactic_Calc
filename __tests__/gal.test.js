@@ -105,6 +105,12 @@ describe('Traveler', () => {
       expect(astronaut.planet).toEqual("Venus");
       expect(astronaut.surpassed()).toEqual("You've outlived your expected life span by 8.39 years.");
     });
+
+    test("should update 'surpassed' method based on Mars", () => {
+      const astronaut = new Traveler(83, "Mars"); 
+      expect(astronaut.planet).toEqual("Mars");
+      expect(astronaut.surpassed()).toEqual("You've outlived your expected life span by 2.77 years.");
+    });
   });
 
 
