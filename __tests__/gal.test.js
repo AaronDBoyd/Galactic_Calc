@@ -60,6 +60,12 @@ describe('Traveler', () => {
       expect(astronaut.planet).toEqual("Mercury");
       expect(astronaut.yearsLeft()).toEqual(182.5);
     });
+
+    test("should build upon the prototype method for determining a user's life expectancy based on the value 'Venus' for the planet property", () => {
+      const astronaut = new Traveler(34, "Venus"); 
+      expect(astronaut.planet).toEqual("Venus");
+      expect(astronaut.yearsLeft()).toEqual(70.65);
+    });
   });
 
 
