@@ -54,7 +54,13 @@ describe('Traveler', () => {
       expect(astronaut.planet).toEqual("Earth");
       expect(astronaut.yearsLeft()).toEqual(43.8);
     });
-  })
+
+    test("should build upon the prototype method for determining a user's life expectancy based on the value 'Mercury' for the planet property", () => {
+      const astronaut = new Traveler(34, "Mercury"); 
+      expect(astronaut.planet).toEqual("Mercury");
+      expect(astronaut.yearsLeft()).toEqual(182.5);
+    });
+  });
 
 
 });
