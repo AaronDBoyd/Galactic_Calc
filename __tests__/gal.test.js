@@ -117,7 +117,11 @@ describe('Traveler', () => {
       expect(astronaut.planet).toEqual("Jupiter");
       expect(astronaut.surpassed()).toEqual("You've outlived your expected life span by 0.44 years.");
     });
+
+    test("should return 'So, Where ya livin?' if no value selected for planet", () => {
+      const astronaut = new Traveler(83, ""); 
+      expect(astronaut.planet).toEqual("");
+      expect(astronaut.surpassed()).toEqual("So, Where ya livin?");
+    });
   });
-
-
 });
