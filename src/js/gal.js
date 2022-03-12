@@ -60,8 +60,8 @@ export default class Traveler {
         return "So, Where ya livin?";
       }
       return extraYears;
-      }
     }
+  }
 }  
 
 
