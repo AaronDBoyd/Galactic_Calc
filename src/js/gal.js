@@ -52,6 +52,8 @@ export default class Traveler {
         extraYears = "You've outlived your expected life span by " + (parseFloat((expect / 0.24) * -1).toFixed(2)) + " years.";
       } else if (this.planet === "Venus") {
         extraYears = "You've outlived your expected life span by " + (parseFloat((expect / 0.62) * -1).toFixed(2)) + " years.";
+      } else if (this.planet === "Mars") {
+        extraYears = "You've outlived your expected life span by " + (parseFloat((expect / 1.88) * -1).toFixed(2)) + " years.";
       }
       return extraYears;
       }
