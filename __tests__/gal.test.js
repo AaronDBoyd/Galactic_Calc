@@ -86,5 +86,14 @@ describe('Traveler', () => {
     });
   });
 
+  describe ('Traveler#surpassed', () => {
+
+    test("should create a 'surpassed' method that returns the message 'You've outlived your your expected life span by' plus a positive number of years if a user has outlived their life expectancy", () => {
+      const astronaut = new Traveler(83, "Earth"); 
+      expect(astronaut.planet).toEqual("Earth");
+      expect(astronaut.surpassed()).toEqual("You've outlived your expected life span by 5.20 years.");
+    });
+  });
+
 
 });
