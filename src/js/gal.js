@@ -22,7 +22,16 @@ export default class Traveler {
     }
     return parseFloat(currentAge.toFixed(2))
   }
-}
+
+  yearsLeft () {
+    let expect = 77.8 - this.age;
+    let daysNumbered = 0;
+    if (this.planet === "Earth") {
+      daysNumbered = expect / 1;
+    } 
+    return parseFloat(daysNumbered.toFixed(2));
+  }
+}  
 
 
   
