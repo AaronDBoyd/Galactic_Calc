@@ -36,6 +36,8 @@ export default class Traveler {
       daysNumbered = expect / 1.88;
     } else if (this.planet === "Jupiter") {
       daysNumbered = expect / 11.86;
+    } else {
+      return "So, Where ya livin?";
     }
     return parseFloat(daysNumbered.toFixed(2));
   }
