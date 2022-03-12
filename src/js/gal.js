@@ -48,6 +48,8 @@ export default class Traveler {
     if (Math.sign(expect) === -1) {
       if (this.planet === "Earth") {
         extraYears = "You've outlived your expected life span by " + (parseFloat((expect / 1) * -1).toFixed(2)) + " years.";
+      } else if (this.planet === "Mercury") {
+        extraYears = "You've outlived your expected life span by " + (parseFloat((expect / 0.24) * -1).toFixed(2)) + " years.";
       }
       return extraYears;
       }
