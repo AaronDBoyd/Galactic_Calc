@@ -27,7 +27,7 @@ _This application will prompt the user to enter their age and choose a planet of
 
 _Once the age and planet selection is submitted, the application will return the users age on the chosen planet as well as well as the number of years they have left, on average. If the users age is past the average life span, the application will return the number of years the user has outlived the average life expectancy._ 
 
-_This application is currently just business logic and tests. User logic and Html have not been created yet.
+_This application is currently just business logic and tests. User logic and Html have not been created yet._
 
 ## Setup/Installation Requirements 
 
